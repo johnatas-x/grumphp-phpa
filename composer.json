@@ -19,7 +19,7 @@
     "source": "https://github.com/johnatas-x/grumphp-phpa"
   },
   "autoload": {
-    "psr-4": {"GrumphpDrupalCheck\\": "src/"}
+    "psr-4": {"GrumphpPhpa\\": "src/"}
   },
   "config": {
     "allow-plugins": {

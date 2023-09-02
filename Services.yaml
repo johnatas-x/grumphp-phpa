@@ -1,6 +1,6 @@
 services:
-  GrumphpPhpA\PhpA:
-    class: GrumphpPhpA\PhpA
+  GrumphpPhpa\Phpa:
+    class: GrumphpPhpa\Phpa
     arguments:
       - '@process_builder'
       - '@formatter.raw_process'

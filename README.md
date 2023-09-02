@@ -16,7 +16,7 @@ Install it using composer:
 1) Add the extension in your grumphp.yml file:
 ```yaml
 extensions:
-  - GrumphpPhpA\ExtensionLoader
+  - GrumphpPhpa\ExtensionLoader
 ```
 
 2) Add phpa to the tasks:

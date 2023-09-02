@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GrumphpDrupalCheck;
+namespace GrumphpPhpa;
 
 use GrumPHP\Runner\TaskResult;
 use GrumPHP\Runner\TaskResultInterface;
@@ -14,9 +14,9 @@ use GrumPHP\Task\Context\RunContext;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
- * PhpA task.
+ * Phpa task.
  */
-final class PhpA extends AbstractExternalTask
+final class Phpa extends AbstractExternalTask
 {
 
   public static function getConfigurableOptions(): ConfigOptionsResolver {

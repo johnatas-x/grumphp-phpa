@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GrumphpPhpA;
+namespace GrumphpPhpa;
 
 use GrumPHP\Extension\ExtensionInterface;
 
