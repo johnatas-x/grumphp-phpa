@@ -24,7 +24,7 @@ final class Phpa extends AbstractExternalTask
     $resolver->setDefaults([
       'directory' => [],
     ]);
-    $resolver->addAllowedTypes('exclude_dir', ['array']);
+    $resolver->addAllowedTypes('directory', ['array']);
 
     return ConfigOptionsResolver::fromOptionsResolver($resolver);
   }
