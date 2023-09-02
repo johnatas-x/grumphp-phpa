@@ -1,0 +1,29 @@
+{
+  "name": "johnatas-x/grumphp-phpa",
+  "description": "Execute phpa in a grumphp task.",
+  "type": "library",
+  "homepage": "https://github.com/johnatas-x/grumphp-phpa",
+  "license": "proprietary",
+  "require": {
+    "phpro/grumphp": "^2.0",
+    "rskuipers/php-assumptions": "^0.8.1"
+  },
+  "authors": [
+    {
+      "name": "Johnatas",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/johnatas-x/grumphp-phpa/issues",
+    "source": "https://github.com/johnatas-x/grumphp-phpa"
+  },
+  "autoload": {
+    "psr-4": {"GrumphpDrupalCheck\\": "src/"}
+  },
+  "config": {
+    "allow-plugins": {
+      "phpro/grumphp": true
+    }
+  }
+}
