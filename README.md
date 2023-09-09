@@ -23,7 +23,9 @@ extensions:
 ```
 tasks:
   phpa:
-    directory: []
+    path: ~
+    exclude: []
 ```
 
-- **exclude_dir** (array): Directories to check.
+- **path** (string): The path to analyse.
+- **exclude** (array): List of files/directories to exclude from the analyse.

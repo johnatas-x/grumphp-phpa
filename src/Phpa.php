@@ -21,10 +21,14 @@ final class Phpa extends AbstractExternalTask
 
   public static function getConfigurableOptions(): ConfigOptionsResolver {
     $resolver = new OptionsResolver();
+
     $resolver->setDefaults([
-      'directory' => [],
+      'path' => '',
+      'exclude' => [],
     ]);
-    $resolver->addAllowedTypes('directory', ['array']);
+
+    $resolver->addAllowedTypes('path', ['string']);
+    $resolver->addAllowedTypes('exclude', ['array']);
 
     return ConfigOptionsResolver::fromOptionsResolver($resolver);
   }
@@ -38,28 +42,15 @@ final class Phpa extends AbstractExternalTask
   {
     $config = $this->getConfig()->getOptions();
 
-    $directories = $config['directory'];
-    $triggered_by = [
-      'php',
-      'inc',
-      'module',
-      'install',
-      'profile',
-      'theme',
-    ];
+    $path = $config['path'];
 
-    $files = $context->getFiles();
-    if (\count($directories)) {
-      $files = $files->paths($directories);
-    }
-    $files = $files->extensions($triggered_by);
-
-    if (0 === \count($files)) {
+    if (empty($path)) {
       return TaskResult::createSkipped($this, $context);
     }
 
     $arguments = $this->processBuilder->createArgumentsForCommand('phpa');
-    $arguments->addFiles($files);
+    $arguments->add($path);
+    $arguments->addOptionalCommaSeparatedArgument('--exclude=%s', $config['exclude']);
 
     $process = $this->processBuilder->buildProcess($arguments);
     $process->run();
