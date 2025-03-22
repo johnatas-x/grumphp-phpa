@@ -6,7 +6,7 @@
   "license": "proprietary",
   "require": {
     "phpro/grumphp": "2.12.0",
-    "johnatas-x/php-assumptions": "0.9.0"
+    "rskuipers/php-assumptions": "0.9.1"
   },
   "authors": [
     {
