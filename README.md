@@ -1,6 +1,6 @@
 # Description
 
-This repository adds a task for GrumPHP that launchs [php-assumptions](https://github.com/rskuipers/php-assumptions).
+This repository adds a task for GrumPHP that launches [php-assumptions](https://github.com/rskuipers/php-assumptions).
 During a commit check for weak assumption. If an assumption is detected, it won't pass.
 
 
