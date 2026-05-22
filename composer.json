@@ -3,7 +3,6 @@
   "description": "Execute phpa in a grumphp task.",
   "type": "library",
   "homepage": "https://github.com/johnatas-x/grumphp-phpa",
-  "license": "proprietary",
   "require": {
     "phpro/grumphp": "2.21.0",
     "rskuipers/php-assumptions": "0.9.1"
