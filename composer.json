@@ -4,7 +4,7 @@
   "type": "library",
   "homepage": "https://github.com/johnatas-x/grumphp-phpa",
   "require": {
-    "phpro/grumphp": "2.23.0",
+    "phpro/grumphp": "2.24.0",
     "rskuipers/php-assumptions": "0.9.1"
   },
   "authors": [
